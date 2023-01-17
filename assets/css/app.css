@@ -59,4 +59,13 @@ body {
     transform: translate(-50%, -50%);
     font-size: 200px;
 }
+.sign{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sign p{
+    font-style: italic;
+}
 /* needed for all alements  */
