@@ -44,19 +44,22 @@ function TruthF() {
     var element = document.getElementById("card");
     var TOD = document.getElementById("tod");
     var v_count = document.getElementById("count-down");
+    var btn = document.getElementById("n1")
     let count = 3
     v_count.innerHTML = count;
     TOD.value = ''
     element.classList.remove("open")
     element.classList.add("close");
+    btn.disabled = true;
+    btn.classList.add("blur");
+
+
     var l = TruthArry.length;
-    // console.log(l);
     if (l == 0) {
         v_count.innerHTML = ''
         TOD.value = "Hết rồi!"
         element.classList.remove("close")
         element.classList.add("open");
-        TruthArry = TruthArryReal
     } else {
         var x = Math.floor((Math.random() * l));
 
@@ -64,9 +67,11 @@ function TruthF() {
             count = count - 1
             if (count === 0) {
                 v_count.innerHTML = ''
-                TOD.value = TruthArry[x];
+                btn.disabled = false;
+                btn.classList.remove("blur");
                 element.classList.remove("close")
                 element.classList.add("open");
+                TOD.value = TruthArry[x];
                 TruthArry = TruthArry.filter((element, index) => { return index !== x })
                 clearInterval(t);
             } else v_count.innerHTML = count;
