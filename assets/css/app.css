@@ -1,12 +1,12 @@
 body {
-    /* background-color: #C70039; */
+    background-color: #283747;
     height: 100vh;
 }
 
 .container {
     width: 350px;
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -31,7 +31,7 @@ body {
     padding: 7px 14px;
     border: none;
     text-align: center;
-    background-color: #1B4F72;
+    background-color: #D4AC0D;
     color: white;
     font-weight: bold;
     float: left;
@@ -58,6 +58,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 200px;
+    color: #fff;
 }
 .sign{
     position: fixed;
@@ -67,5 +68,6 @@ body {
 }
 .sign p{
     font-style: italic;
+    color: #fff;
 }
 /* needed for all alements  */

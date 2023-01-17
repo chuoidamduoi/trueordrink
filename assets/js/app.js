@@ -50,7 +50,7 @@ function TruthF() {
     element.classList.remove("open")
     element.classList.add("close");
     var l = TruthArry.length;
-
+    // console.log(l);
     if (l == 0) {
         v_count.innerHTML = ''
         TOD.value = "Hết rồi!"
